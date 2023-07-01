@@ -202,12 +202,12 @@ $ git push
 ```
 
 ### 9. Create Pull Request "CheckLists" branch to "main" branch in the external repository:  
-*Switch to "main" branch of external repository*    
-*Press `Compare & pool request`*  
-*Choose `compare: Checklists`*  
-*Press `Create pull request`*
-*Press `Merge pull request`*  
-*Press `Congirm merge`*  
+*-Switch to "main" branch of external repository*    
+*-Press `Compare & pool request`*  
+*-Choose `compare: Checklists`*  
+*-Press `Create pull request`*
+*-Press `Merge pull request`*  
+*-Press `Congirm merge`*  
 
 ### 10. Synchronize external and local "main" branches:
 
