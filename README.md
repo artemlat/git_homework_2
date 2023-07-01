@@ -150,6 +150,90 @@ To github.com:artemlat/work_with_branches.git
    6041ed7..de05d33  main -> main
 ```
 
+### 7. In "CheckLists" branch create a structure of the checklist:
+
+```
+artem@DESKTOP-4FHC137 MINGW64 /d/github/work_with_branches (main)
+$ git checkout CheckLists
+Switched to branch 'CheckLists'
+Your branch is up to date with 'origin/CheckLists'.
+
+artem@DESKTOP-4FHC137 MINGW64 /d/github/work_with_branches (CheckLists)
+$ cat >> checklist_structure.txt
+ID
+1
+
+Summary
+Redirection to the "Capital.com" app
+
+Steps
+1.Lauch the "Crypto price widgets" app
+2. Open "Catalogue" tab
+3. Tap on the banner "Capital.com"
+
+ER
+Redirection to the "Capital.com" app
+
+Status
+Pass
+
+Name of tester / device
+@latyshevv (Samsung M31 Android 12)
+
+Comments
+```
+
+### 8. Push checklist_structure.txt to the external repository:
+
+```
+artem@DESKTOP-4FHC137 MINGW64 /d/github/work_with_branches (CheckLists)
+$ git add .
+warning: LF will be replaced by CRLF in checklist_structure.txt.
+The file will have its original line endings in your working directory
+
+artem@DESKTOP-4FHC137 MINGW64 /d/github/work_with_branches (CheckLists)
+$ git commit -m "add checklist_structure.txt to the external repository"
+[CheckLists 4bee42d] add checklist_structure.txt to the external repository
+ 1 file changed, 21 insertions(+)
+ create mode 100644 checklist_structure.txt
+
+artem@DESKTOP-4FHC137 MINGW64 /d/github/work_with_branches (CheckLists)
+$ git push
+```
+
+### 9. Create Pull Request "CheckLists" branch to "main" branch in the external repository:  
+*Switch to "main" branch of external repository*    
+*Press `Compare & pool request`*  
+*Choose `compare: Checklists`*  
+*Press `Create pull request`*
+*Press `Merge pull request`*  
+*Press `Congirm merge`*  
+
+### 10. Synchronize external and local "main" branches:
+
+```
+artem@DESKTOP-4FHC137 MINGW64 /d/github/work_with_branches (CheckLists)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+artem@DESKTOP-4FHC137 MINGW64 /d/github/work_with_branches (main)
+$ git pull
+Enter passphrase for key '/c/Users/artem/.ssh/id_rsa':
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 780 bytes | 9.00 KiB/s, done.
+From github.com:artemlat/work_with_branches
+   de05d33..0f54210  main       -> origin/main
+Updating de05d33..0f54210
+Fast-forward
+ checklist_structure.txt | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+ create mode 100644 checklist_structure.txt
+```
+
 
 
 
