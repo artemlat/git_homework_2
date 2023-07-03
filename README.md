@@ -205,9 +205,9 @@ $ git push
 *-Switch to "main" branch of external repository*    
 *-Press `Compare & pool request`*  
 *-Choose `compare: Checklists`*  
-*-Press `Create pull request`*
+*-Press `Create pull request`*  
 *-Press `Merge pull request`*  
-*-Press `Congirm merge`*  
+*-Press `Congirm merge`*    
 
 ### 10. Synchronize external and local "main" branches:
 
